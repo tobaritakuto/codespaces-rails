@@ -1,0 +1,22 @@
+{
+  // Use the latest version of rdbg
+  // https://ama-tech.hatenablog.com/debug-rails-with-vscode-rdbg
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "rdbg",
+      "name": "Debug rails app with rdbg",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "script": "bin/rails s",
+      "args": [],
+      "askParameters": false,
+      "useBundler": true
+    },
+    {
+      "type": "rdbg",
+      "name": "Attach with rdbg",
+      "request": "attach"
+    }
+  ]
+}
