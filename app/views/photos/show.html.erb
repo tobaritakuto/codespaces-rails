@@ -1,0 +1,11 @@
+<h1><%= @photo.title %></h1>
+
+<% if @photo.image.attached? %>
+  <%= image_tag @photo.image %>
+<% else %>
+  <p>写真がアップロードされていません。</p>
+<% end %>
+
+<p><%= @photo.description %></p>
+
+<%= link_to '一覧に戻る', photos_path %>
