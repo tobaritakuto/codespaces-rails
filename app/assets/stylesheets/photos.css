@@ -1,0 +1,5 @@
+.photo-image {
+  width: 300px;
+  max-width: 100%; /* don't stretch the image */
+  height: auto; /* maintain aspect ratio */
+}
